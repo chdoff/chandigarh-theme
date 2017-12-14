@@ -1,0 +1,149 @@
+/*
+Theme Name:     Chandigarh
+Description:
+Author:         admin
+Template:       twentyseventeen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+.custom-header{
+    max-height: 250px !important;
+    overflow: auto;
+    width: 100% !important;
+}
+/*.single-featured-image-header{*/
+    /*max-height: 400px !important;*/
+/*}*/
+.custom-header .wrap,.navigation-top .wrap,#content .wrap,footer .wrap{
+    margin: 0px 30px;
+    max-width: 100%;
+}
+.site-branding{
+    margin-bottom: 0;
+    position: relative;
+    bottom: 0;
+    /*top: 25px;*/
+}
+.site-content {
+    padding: 3.5em 0 0;
+}
+.page-header{
+    display: none;
+}
+
+/*-- Navigation--*/
+@media screen and (max-width: 767px){
+    #site-navigation{
+        overflow: hidden;
+    }
+    #site-navigation ul{
+        background: linear-gradient(-90deg, #71b280, #267871);
+    }
+    button.menu-toggle{
+        color: #ffffff;
+    }
+}
+.navigation-top{
+    background: linear-gradient(-90deg, #71b280, #267871);
+    border: none;
+    }
+.main-navigation li li:hover, .main-navigation li li.focus{
+    background: #71b280;
+}
+.main-navigation li li.focus > a, .main-navigation li li:focus > a, .main-navigation li li:hover > a, .main-navigation li li a:hover, .main-navigation li li a:focus, .main-navigation li li.current_page_item a:hover, .main-navigation li li.current-menu-item a:hover, .main-navigation li li.current_page_item a:focus, .main-navigation li li.current-menu-item a:focus{
+color: #71b280}
+
+.has-header-image .custom-header-media img, .has-header-video .custom-header-media video, .has-header-video .custom-header-media iframe, .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img{
+    /*display: none;*/
+}
+.custom-header,.focus,.main-navigation ul ul{
+    background: #71b280;
+    border: none;
+}
+.main-navigation li li:hover, .main-navigation li li.focus{
+    background: #267871;
+}
+.main-navigation a,.navigation-top .current-menu-item > a,.main-navigation a:hover ,.navigation-top .current_page_item > a,.site-header .navigation-top .menu-scroll-down{
+    color: #fff;
+}
+.main-navigation ul li.menu-item-has-children:after, .main-navigation ul li.page_item_has_children:after{
+    border-color: transparent transparent #71b280;
+}
+.navigation-top .wrap{
+    padding: 0px 30px;
+}
+.navigation-top a.menu-scroll-down{
+    display: none;
+}
+
+/* -Home Page- */
+@media screen and (min-width: 991px){
+    .post-thumb{
+        width: 33%;
+        float: left;
+        padding: 8px;
+    }
+    .post-content{
+        width: 67%;
+        float: right;
+        padding: 8px;
+    }
+    .post,.archive,.category{
+        display: inline-block;
+        padding-bottom: 0.5em !important;
+    }
+}
+/* -Sidebar- */
+#secondary{
+    padding-top: 0px;
+}
+    #secondary .widget:nth-child(even){
+    background: #71b280;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#secondary .widget:nth-child(odd){
+    background: #267871;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#secondary .widget_search{
+    background: none !important;
+}
+#secondary h2.widget-title{
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#secondary .widget ul li, .widget ol li{
+    border-top: none;
+    color: #f5f5f5;
+}
+#secondary .widget ul li:last-child,#colophon .widget ul li:last-child{
+    border-bottom: none;
+}
+#secondary .widget ul li a, .widget ol li a{
+    color: #f2f2f2;
+    box-shadow: none;
+}
+#secondary .widget ul li a:hover, .widget ol li a:hover{
+    color: #ffffff;
+}
+/*-- Fooeter sidebar--*/
+@media screen and (min-width: 767px){
+    #colophon .widget-column{
+        width: 25%;
+}
+#colophon .widget{
+    padding: 20px;
+}
+#colophon .widget h2{
+    font-size: 12px;
+}
+}
+
+/*--Single --*/
+.single .single-featured-image-header{
+    display: none;
+}
