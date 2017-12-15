@@ -35,3 +35,8 @@ Beautiful Images in Screenshot by Pexels.com and Licensed under Public Domain CC
 #### Version 1.0
 
 * Initial Release
+
+#### Version 1.1
+
+* Minor Bug Fixes
+* Added Missing files.

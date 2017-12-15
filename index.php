@@ -24,7 +24,7 @@ get_header(); ?>
             </header>
         <?php else : ?>
             <header class="page-header">
-                <h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
+                <h2 class="page-title"><?php _e( 'Posts', 'chandigarh' ); ?></h2>
             </header>
         <?php endif; ?>
 
@@ -42,14 +42,14 @@ get_header(); ?>
                          * If you want to override this in a child theme, then include a file
                          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                          */
-                        get_template_part( 'template-parts/post/content-home', get_post_format() );
+                        get_template_part( 'template-parts/post/content', 'home' );
 
                     endwhile;
 
                     the_posts_pagination( array(
-                        'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-                        'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+                        'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'chandigarh' ) . '</span>',
+                        'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'chandigarh' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'chandigarh' ) . ' </span>',
                     ) );
 
                 else :
